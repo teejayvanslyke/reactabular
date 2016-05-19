@@ -55,7 +55,7 @@ module.exports = (attrs) => {
         },
 
         done() {
-            this.props.onValue(this.getDOMNode().value);
+            this.props.onValue(React.findDOMNode(this).value);
         },
     });
 };
